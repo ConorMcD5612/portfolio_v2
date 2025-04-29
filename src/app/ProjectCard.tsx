@@ -27,7 +27,7 @@ export const ProjectCard = ({
     text-black 
     border-light-orange 
     border-3 
-    w-[480px] 
+    w-full
     h-[480px]
     bg-cream
     rounded-lg
