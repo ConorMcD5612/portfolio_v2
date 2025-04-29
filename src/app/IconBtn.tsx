@@ -13,7 +13,7 @@ export const IconBtn = ({
 }) => {
   return (
     <button className={`flex gap-5 
-    bg-${color} 
+    bg-light-orange
     place-items-center 
     p-2 rounded-md 
     border-cream 

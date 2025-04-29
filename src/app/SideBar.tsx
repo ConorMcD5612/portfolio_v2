@@ -32,7 +32,7 @@ export const SideBar = () => {
       <div className="flex">
         <p className="text-2xl">
           Check out some of my personal projects and projects I've built for
-          school
+          school<span className="text-light-red">!!!!!</span>
         </p>
         
       </div>

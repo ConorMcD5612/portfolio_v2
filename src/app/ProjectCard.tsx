@@ -28,7 +28,8 @@ export const ProjectCard = ({
     border-light-orange 
     border-3 
     w-full
-    h-[480px]
+    max-h-[480px]
+
     bg-cream
     rounded-lg
     "
@@ -49,7 +50,7 @@ export const ProjectCard = ({
         </div>
       </div>
       <div className="absolute left-0 bottom-0 m-2 flex gap-2 text-lg">
-      <button className="bg-dark-blue rounded-md p-2 text-cream border-black border-2 text-lg">
+      <button className="bg-dark-blue rounded-md p-2 text-cream border-black border-2 text-lg hover:bg-light-red hover:text-black hover:underline decoration-dark-blue hover:cursor-grab">
         WEBSITE
       </button>
       <button className="rounded-md p-2 border-black border-2">
