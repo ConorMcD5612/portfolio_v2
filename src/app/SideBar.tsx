@@ -6,7 +6,7 @@ import { BtnGroup } from "./BtnGroup";
 export const SideBar = () => {
   // github, resume
   return (
-    <div className={`flex flex-col gap-20 w-1/2`}>
+    <div className={`flex flex-col gap-20 md:w-5/6 lg:w-3/4 xl:w-4/6 2xl:w-1/2`}>
       <header className="inline-block font-black text-8xl">
         <h1>
           I<span className="text-mint">'</span>m
