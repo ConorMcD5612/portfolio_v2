@@ -3,17 +3,10 @@ import { GitHub } from "react-feather";
 import { Space_Grotesk } from "next/font/google";
 import { BtnGroup } from "./BtnGroup";
 
-const SpaceGrotesk = Space_Grotesk({
-  variable: "--font-grotesk",
-  subsets: ["latin"],
-});
-
 export const SideBar = () => {
   // github, resume
   return (
-    <div
-      className={`flex flex-col w-4/6 h-4/6 gap-20 ${SpaceGrotesk.className}`}
-    >
+    <div className={`flex flex-col gap-20 w-1/2`}>
       <header className="inline-block font-black text-8xl">
         <h1>
           I<span className="text-mint">'</span>m
@@ -28,7 +21,7 @@ export const SideBar = () => {
       </header>
 
       <div className="flex gap-3 flex-col">
-        <div className="text-2xl">
+        <div className="text-2xl font-medium">
           <p className="">
             I like to make<span className="text-mint"> web apps</span> for
             increasing productivity, as well as work on{" "}
@@ -36,6 +29,14 @@ export const SideBar = () => {
           </p>
         </div>
       </div>
+      <div className="flex">
+        <p className="text-2xl">
+          Check out some of my personal projects and projects I've built for
+          school
+        </p>
+        
+      </div>
+
       <BtnGroup />
     </div>
   );

@@ -25,7 +25,7 @@ export const IconBtn = ({
     hover:border-black
     `
     }>
-      <div className="text-black font-extrabold  text-xl">{name.toUpperCase()}</div>
+      <div className="text-black font-extrabold text-xl">{name.toUpperCase()}</div>
       <img height={size} width={size} src={iconSrc} />
     </button>
   );
