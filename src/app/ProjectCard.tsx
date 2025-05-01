@@ -2,12 +2,14 @@ import React from "react";
 import { Tech } from "./Tech";
 import { Features } from "./Features";
 import { GitHub } from "react-feather";
+import { IconBtn } from "./IconBtn";
 
 export const ProjectCard = ({
   name,
   description,
   imgSrc,
   gitURL,
+  webURL,
   tech,
   features,
 }: {
@@ -15,6 +17,7 @@ export const ProjectCard = ({
   description: string;
   imgSrc: string;
   gitURL: string;
+  webURL: string;
   tech: string[];
   features: string[];
 }) => {
@@ -35,10 +38,7 @@ export const ProjectCard = ({
     "
     >
       <div className={`h-1/2 w-full`}>
-        <img
-          src={imgSrc}
-          className="w-full h-full rounded-t-lg"
-        ></img>
+        <img src={imgSrc} className="w-full h-full rounded-t-lg"></img>
       </div>
       <div>
         <div className="flex flex-col gap-3 h-1/2 w-full p-2">
@@ -50,12 +50,35 @@ export const ProjectCard = ({
         </div>
       </div>
       <div className="absolute left-0 bottom-0 m-2 flex gap-2 text-lg">
-      <button className="bg-dark-blue rounded-md p-2 text-cream border-black border-2 text-lg hover:bg-light-red hover:text-black underline decoration-dark-blue hover:cursor-grab">
-        WEBSITE
-      </button>
-      <button className="rounded-md p-2 border-black border-2">
-        <img src={"/icons/iconmonstr-github-1.svg"}></img>
-      </button>
+        {webURL ? (
+          <>
+            <a
+              href={webURL}
+              className="bg-dark-blue font-bold hover:underline rounded-md p-2 text-cream border-black border-3 text-lg hover:bg-light-red hover:text-black underline decoration-dark-blue hover:cursor-grab
+              "
+              target="_blank"
+            >
+              WEBSITE
+            </a>
+            <a
+              href={gitURL}
+              className="flex place-items-center hover:bg-light-red rounded-md p-2 border-black border-3"
+              target="_blank"
+            >
+              <img src={"/icons/iconmonstr-github-1.svg"}></img>
+            </a>
+          </>
+        ) : (
+          <a href={gitURL} target="_blank">
+            <IconBtn
+              iconSrc="/icons/iconmonstr-github-1.svg"
+              name="github"
+              size={24}
+              color="darkBlue"
+              border="cream"
+            />
+        </a>  
+        )}
       </div>
     </div>
   );

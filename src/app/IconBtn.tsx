@@ -10,22 +10,32 @@ export const IconBtn = ({
   name: string;
   size: number;
   color: string;
+  border: string | null;
 }) => {
+
+  const colors = {
+    orange: "bg-light-orange border-cream text-black",
+    red: "bg-light-red",
+    darkBlue: "bg-dark-blue border-black text-cream",
+  };
+
   return (
     <button className={`flex gap-5 
-    bg-light-orange
+    ${colors[color]}
     place-items-center 
     p-2 rounded-md 
-    border-cream 
     border-3 
     hover:underline 
     decoration-light-red
     hover:cursor-grab
     hover:bg-light-red
     hover:border-black
+    hover:decoration-light-blue
+    hover:text-black
+    
     `
     }>
-      <div className="text-black font-extrabold text-xl">{name.toUpperCase()}</div>
+      <div className=" font-extrabold text-xl">{name.toUpperCase()}</div>
       <img height={size} width={size} src={iconSrc} />
     </button>
   );

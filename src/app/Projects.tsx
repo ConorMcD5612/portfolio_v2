@@ -10,7 +10,8 @@ const project_info = [
     description:
       "Heads up texas hold'em made in python, built by a team of four",
     imgSrc: texasImg,
-    gitURL: "https://github.com/sgmalik/software_engineering_final",
+    gitURL: "https://github.com/sgmalik/software_engineering_final.git",
+    webURL: null,
     tech: ["Python", "Pygame", "Pytest"],
     features: [
       "Graphical interface created with homemade assets",
@@ -22,7 +23,8 @@ const project_info = [
     name: "Heatmaps",
     description: "A habit tracking app based on github's heatmap.",
     imgSrc: heatmapImg,
-    gitURL: "https://heatmaps-eta.vercel.app/dashboard",
+    gitURL: "https://github.com/ConorMcD5612/heatmaps",
+    webURL: "https://heatmaps-eta.vercel.app/dashboard",
     tech: ["TypeScript", "React", "SQL"],
     features: [
       "Track time spent on a habit daily",
@@ -34,7 +36,8 @@ const project_info = [
     name: "9x Tic-Tac-Toe",
     description: "tic-tac-toe based game made with JavaScript",
     imgSrc: ticTacImg,
-    gitURL: "https://conormcd5612.github.io/",
+    gitURL: "https://github.com/ConorMcD5612/Ultimate-Tic-Tac-Toe",
+    webURL: "https://conormcd5612.github.io/",
     tech: ["JavaScript"],
     features: [
       "Once a board has been clicked, goes to corresponding board",
@@ -48,12 +51,13 @@ export const Projects = () => {
   return (
     <div className="grid grid-rows-2 grid-cols-2 gap-7 mt-5">
       {project_info.map(
-        ({ name, description, imgSrc, gitURL, tech, features }, index) => {
+        ({ name, description, imgSrc, gitURL, tech, features, webURL}, index) => {
           return (
             <ProjectCard
               name={name}
               description={description}
               imgSrc={imgSrc.src}
+              webURL={webURL}
               gitURL={gitURL}
               tech={tech}
               features={features}
