@@ -1,6 +1,7 @@
 import React from "react";
 import { Tech } from "./Tech";
 import { IconBtn } from "./IconBtn";
+import Image from "next/image";
 
 export const ProjectCard = ({
   name,
@@ -34,7 +35,7 @@ export const ProjectCard = ({
     "
     >
       <div className={`h-1/2 w-full`}>
-        <img src={imgSrc} className="w-full h-full rounded-t-lg"></img>
+        <Image width={500} height={500} src={imgSrc} className="w-full h-full rounded-t-lg" alt="project image" ></Image>
       </div>
       <div>
         <div className="flex flex-col gap-3 h-1/2 w-full p-2">
@@ -61,7 +62,7 @@ export const ProjectCard = ({
               className="flex place-items-center hover:bg-light-red rounded-md p-2 border-black border-3"
               target="_blank"
             >
-              <img src={"/icons/iconmonstr-github-1.svg"}></img>
+              <Image width={24} height={24} src={"/icons/iconmonstr-github-1.svg"} alt="github icon"></Image>
             </a>
           </>
         ) : (
