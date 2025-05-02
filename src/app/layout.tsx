@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-
-import { Space_Mono } from "next/font/google";
-import { Lexend } from "next/font/google";
 import { Space_Grotesk } from "next/font/google";
-
 import "./globals.css";
-
-
-const lexend = Lexend({
-  variable: "--font-lexend",
-  subsets:["latin"]
-})
-
 
 const SpaceGrotesk = Space_Grotesk({
   variable: "--font-grotesk",
@@ -30,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${SpaceGrotesk.className} bg-dark-blue antialiased`}
-      >
+      <body className={`${SpaceGrotesk.className} bg-dark-blue antialiased`}>
         {children}
       </body>
     </html>

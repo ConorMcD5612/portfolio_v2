@@ -10,10 +10,11 @@ export const IconBtn = ({
   name: string;
   size: number;
   color: string;
-  border: string | null;
 }) => {
 
-  const colors = {
+  type ColorKey = "orange" | "red" | "darkBlue";
+
+  const colors: Record<ColorKey, string> = {
     orange: "bg-light-orange border-cream text-black",
     red: "bg-light-red",
     darkBlue: "bg-dark-blue border-black text-cream",
@@ -21,7 +22,7 @@ export const IconBtn = ({
 
   return (
     <button className={`flex gap-5 
-    ${colors[color]}
+    ${colors[color as ColorKey]}
     place-items-center 
     p-2 rounded-md 
     border-3 

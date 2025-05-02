@@ -1,6 +1,4 @@
 import React from "react";
-import { GitHub } from "react-feather";
-import { Space_Grotesk } from "next/font/google";
 import { BtnGroup } from "./BtnGroup";
 
 export const SideBar = () => {
@@ -9,7 +7,7 @@ export const SideBar = () => {
     <div className={`flex flex-col gap-20 md:w-5/6 lg:w-3/4 xl:w-4/6 2xl:w-1/2`}>
       <header className="inline-block font-black text-8xl">
         <h1>
-          I<span className="text-mint">'</span>m
+          I<span className="text-mint">&apos;</span>m
           <span className="text-light-orange"> Conor</span>
         </h1>
         <h1 className="text-light-orange">
@@ -31,7 +29,7 @@ export const SideBar = () => {
       </div>
       <div className="flex">
         <p className="text-2xl">
-          Check out some of my personal projects and projects I've built for
+          Check out some of my personal projects and projects I&apos;ve built for
           school<span className="text-light-red">!!!!!</span>
         </p>
         

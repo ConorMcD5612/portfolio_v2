@@ -1,7 +1,5 @@
 import React from "react";
 import { Tech } from "./Tech";
-import { Features } from "./Features";
-import { GitHub } from "react-feather";
 import { IconBtn } from "./IconBtn";
 
 export const ProjectCard = ({
@@ -11,13 +9,12 @@ export const ProjectCard = ({
   gitURL,
   webURL,
   tech,
-  features,
 }: {
   name: string;
   description: string;
   imgSrc: string;
   gitURL: string;
-  webURL: string;
+  webURL: string | null;
   tech: string[];
   features: string[];
 }) => {
@@ -32,7 +29,6 @@ export const ProjectCard = ({
     border-3 
     w-full
     max-h-[480px]
-
     bg-cream
     rounded-lg
     "
@@ -75,7 +71,6 @@ export const ProjectCard = ({
               name="github"
               size={24}
               color="darkBlue"
-              border="cream"
             />
         </a>  
         )}
