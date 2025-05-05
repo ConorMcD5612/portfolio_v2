@@ -12,7 +12,7 @@ export const BtnGroup = () => {
           color="orange"
         />
       </a>
-      <a href="/public/resume.pdf" download>
+      <a href="/resume.pdf" download>
         <IconBtn
           name="Resume"
           size={24}
@@ -20,12 +20,14 @@ export const BtnGroup = () => {
           color="orange"
         />
       </a>
+      <a href="mailto:cdmcdevi@gmail.com">
       <IconBtn
         name="Email"
         size={24}
         iconSrc="/icons/iconmonstr-email-3.svg"
         color="orange"
-      />
+        />
+    </a>
     </div>
   );
 };
