@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const IconBtn = ({
   iconSrc,
@@ -33,11 +34,10 @@ export const IconBtn = ({
     hover:border-black
     hover:decoration-light-blue
     hover:text-black
-    
     `
     }>
       <div className=" font-extrabold text-xl">{name.toUpperCase()}</div>
-      <img height={size} width={size} src={iconSrc} />
+      <Image height={size} width={size} src={iconSrc} alt="icon button" />
     </button>
   );
 };
