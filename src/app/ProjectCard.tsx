@@ -28,8 +28,8 @@ export const ProjectCard = ({
     text-black 
     border-light-orange 
     border-3 
-    w-full
     max-h-[420px]
+    h-[420px]
     bg-cream
     rounded-lg
     "

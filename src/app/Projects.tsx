@@ -49,7 +49,7 @@ const project_info = [
 
 export const Projects = () => {
   return (
-    <div className="grid grid-rows-2 grid-cols-2 gap-7 mt-5">
+    <div className="grid md:grid-rows-2 md:grid-cols-2 gap-7 w-full h-full">
       {project_info.map(
         ({ name, description, imgSrc, gitURL, tech, features, webURL}, index) => {
           return (
