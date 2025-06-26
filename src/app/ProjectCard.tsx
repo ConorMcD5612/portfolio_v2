@@ -31,6 +31,7 @@ export const ProjectCard = ({
     max-h-[420px]
     h-[420px]
     bg-cream
+    w-full
     rounded-lg
     "
     >

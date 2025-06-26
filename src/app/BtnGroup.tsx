@@ -3,7 +3,7 @@ import { IconBtn } from "./IconBtn";
 
 export const BtnGroup = () => {
   return (
-    <div className="flex gap-2 align-start">
+    <div className="flex gap-2 justify-between">
       <a href="https://github.com/ConorMcD5612" target="_blank">
         <IconBtn
           name="GitHub"

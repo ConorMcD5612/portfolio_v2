@@ -36,7 +36,7 @@ export const IconBtn = ({
     hover:text-black
     `
     }>
-      <div className=" font-extrabold text-xl">{name.toUpperCase()}</div>
+      <div className=" font-extrabold">{name.toUpperCase()}</div>
       <Image height={size} width={size} src={iconSrc} alt="icon button" />
     </button>
   );

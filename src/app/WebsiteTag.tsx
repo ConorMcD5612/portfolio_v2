@@ -12,7 +12,7 @@ export const WebsiteTag = ({top} : {top: boolean}) => {
   
   return (
     <div
-      className={`absolute ${styles["middle"]} ${top ? styles["top"] : styles["bottom"]} opacity-50 font-extrabold text-xl p-2`}
+      className={`absolute text-xs ${styles["middle"]} ${top ? styles["top"] : styles["bottom"]} opacity-50 font-extrabold text-xl p-2`}
     >
       {top ? "<conor.works>" : "</conor.works>"}
     </div>
